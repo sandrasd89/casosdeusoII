@@ -2,19 +2,17 @@
 
 left to right direction
 
-:Empleado: as e
-:Administrador: as a
+:Empleado: -- (alta cliente)
+:Empleado: -- (introducir pedido)
+:Empleado: -- (obtener estado pedido)
+:Empleado: -- (buscar pedido)
+:Empleado: -- (cancelar pedido)
+(alta cliente) ..> (introducir pedido) : extiende
+(introducir pedido) ..> (buscar cliente) : incluye
+(introducir pedido) <.. (pago con tarjeta) : extiende
+(introducir pedido) <.. (pago en cuenta) : extiende
+(obtener estado pedido) ..> (buscar pedido) : incluye
+(cancelar pedido)..> (buscar pedido) : incluye
 
-rectangle EmpresaPedidos {
-e -- (Introducir Pedido)
-e -- (Cancelar Pedido)
-e -- (Obtener Estado Pedido)
-e -- (Borrar Pedido)
-e -- (Buscar Pedidos)
-e -- (Alta Cliente)
-e -- (Buscar Cliente)
-a -- (Nuevo Producto)
-a -- (Borrar Producto)
-}
 
 @enduml
