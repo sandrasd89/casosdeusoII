@@ -2,16 +2,11 @@
 
 left to right direction
 
-:Socio: as s
-:Biblioteca: as b
+:Bibliotecario: --> (Baja socio)
+(Baja socio) ..> (Buscar Socio) : <<include>>
 
-rectangle Biblioteca{
-s -- (Reservar Libro)
-s -- (Prestar Libro)
-s -- (Devolver Libro)
-b -- (Prestar Libro)
-b -- (Actualizar Catalogo)
-}
+
+
 
 
 @enduml
