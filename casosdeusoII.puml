@@ -1,8 +1,20 @@
 @startuml
 
+left to right direction
 
-:Cliente bancario: <|-- :Cliente Corporativo:
-:Cliente bancario: <|-- :Cliente Normal:
+:Empleado: as e
+:Administrador: as a
 
+rectangle EmpresaPedidos {
+e -- (Introducir Pedido)
+e -- (Cancelar Pedido)
+e -- (Obtener Estado Pedido)
+e -- (Borrar Pedido)
+e -- (Buscar Pedidos)
+e -- (Alta Cliente)
+e -- (Buscar Cliente)
+a -- (Nuevo Producto)
+a -- (Borrar Producto)
+}
 
 @enduml
