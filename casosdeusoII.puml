@@ -6,15 +6,12 @@ left to right direction
 :Actor1: as a1
 
 rectangle sistema{
-usecase "(Caso de uso)"
-usecase "(Caso de uso1)"
-usecase "(Caso de uso2)"
+a -- (Caso de uso)
+a -- (Caso de uso1)
+a -- (Caso de uso2)
+a1 -- (Caso de uso2)
+a1 -- (Caso de uso)
 }
 
-a -- (Caso de uso)
-a -left- (Caso de uso1)
-:Actor: -left- (Caso de uso2)
-:Actor1: -right- (Caso de uso2)
-:Actor1: -right- (Caso de uso1)
 
 @enduml
