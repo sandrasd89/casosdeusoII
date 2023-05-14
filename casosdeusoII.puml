@@ -2,8 +2,8 @@
 
 left to right direction
 
-:Bibliotecario: --> (Baja socio)
-(Baja socio) ..> (Buscar Socio) : <<include>>
+:Agente: --> (Evaluar\nSolicitud de Credito)
+(Solicitar informacion\nadicional al cliente) ..> (Evaluar\nSolicitud de Credito) : <<extend>>
 
 
 
