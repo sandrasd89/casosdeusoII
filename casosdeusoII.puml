@@ -3,9 +3,7 @@
 left to right direction
 
 :Agente: --> (Evaluar\nSolicitud de Credito)
-(Solicitar informacion\nadicional al cliente) ..> (Evaluar\nSolicitud de Credito) : <<extend>>
-
-
+(Solicitar informacion\nadicional al cliente) ..> (Evaluar\nSolicitud de Credito) : <<extend>>\n Si ingresos <1000
 
 
 
