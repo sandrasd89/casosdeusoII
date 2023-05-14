@@ -2,15 +2,15 @@
 
 left to right direction
 
-:Actor: as a
-:Actor1: as a1
+:Socio: as s
+:Biblioteca: as b
 
-rectangle sistema{
-a -- (Caso de uso)
-a -- (Caso de uso1)
-a -- (Caso de uso2)
-a1 -- (Caso de uso2)
-a1 -- (Caso de uso)
+rectangle Biblioteca{
+s -- (Reservar Libro)
+s -- (Prestar Libro)
+s -- (Devolver Libro)
+b -- (Prestar Libro)
+b -- (Actualizar Catalogo)
 }
 
 
