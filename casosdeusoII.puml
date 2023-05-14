@@ -1,10 +1,8 @@
 @startuml
 
 
-:Agente: -right-> (Enviar Solicitud de Credito)
-(Enviar Solicitud de Credito) <|-- (Enviar\n solicitud de credito personal)
-(Enviar Solicitud de Credito) <|-- (Enviar\n solicitud de credito empresarial)
-
+:Cliente bancario: <|-- :Cliente Corporativo:
+:Cliente bancario: <|-- :Cliente Normal:
 
 
 @enduml
