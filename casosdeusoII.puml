@@ -1,9 +1,9 @@
 @startuml
 
-left to right direction
 
-:Agente: --> (Evaluar\nSolicitud de Credito)
-(Solicitar informacion\nadicional al cliente) ..> (Evaluar\nSolicitud de Credito) : <<extend>>\n Si ingresos <1000
+:Agente: -right-> (Enviar Solicitud de Credito)
+(Enviar Solicitud de Credito) <|-- (Enviar\n solicitud de credito personal)
+(Enviar Solicitud de Credito) <|-- (Enviar\n solicitud de credito empresarial)
 
 
 
